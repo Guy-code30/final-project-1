@@ -234,11 +234,9 @@ nav {
 }
 
 .three_column--wrapper {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-wrap: wrap;
-  max-width: 1024px;
+  justify-content: center;
 }
 
 .three_column--image-description {
@@ -251,18 +249,48 @@ nav {
 
 .three_column--heading {
   font-size: 3rem;
+  text-align: center;
 }
 
 .three_column--second {
-  width: 50%;
   display: flex;
-  flex-flow: wrap;
   justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  width: calc(100% / 3);
+  padding: 24px;
+  color: rgb(124, 139, 161);
 }
 
 .three_column--card-two {
   display: flex;
-  flex-wrap: wrap;
   width: 50%;
-  /* padding: 16px; */
+}
+
+.title {
+  margin-top: 16px;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.025rem;
+  color: rgb(36, 62, 99);
+}
+
+.description {
+  line-height: 1.5;
+  padding-top: 16px;
+}
+
+.imageContainer {
+  height: 4rem;
+  width: 4rem;
+  flex-shrink: 0;
+  border-radius: 9999px;
+  border-width: 1px;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.textContainer {
+  padding-left: 16px;
 }
