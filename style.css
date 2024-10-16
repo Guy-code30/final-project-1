@@ -237,6 +237,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 2rem 0.5rem;
 }
 
 .three_column--image-description {
@@ -255,8 +256,10 @@ nav {
 .three_column--second {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  text-align: left;
+  align-items: center;
+  text-align: center;
+  /* align-items: flex-start; */
+  /* text-align: left; */
   width: calc(100% / 3);
   padding: 24px;
   color: rgb(124, 139, 161);
@@ -264,7 +267,6 @@ nav {
 
 .three_column--card-two {
   display: flex;
-  width: 50%;
 }
 
 .title {
@@ -279,12 +281,14 @@ nav {
 .description {
   line-height: 1.5;
   padding-top: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .imageContainer {
   height: 4rem;
   width: 4rem;
-  flex-shrink: 0;
   border-radius: 9999px;
   border-width: 1px;
   padding: 1.25rem;
@@ -294,3 +298,51 @@ nav {
 .textContainer {
   padding-left: 16px;
 }
+
+/* Two columns */
+
+.two_column-container {
+  position: relative;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%; */
+}
+
+.two_column--button {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  max-width: 1280px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.two_column--button-image {
+  margin-left: auto;
+  margin-right: 0;
+  width: 100%;
+  max-width: 28rem;
+  padding-right: 2.5rem;
+}
+
+.two_column--image {
+  border-radius: 0.25rem;
+  border-width: 1px;
+  max-width: 100%;
+  height: auto;
+}
+
+.two_column--text-column {
+  margin-left: 0;
+  margin-right: auto;
+  width: 100%;
+  max-width: 28rem;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
