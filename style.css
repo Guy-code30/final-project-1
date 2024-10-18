@@ -35,6 +35,13 @@ a {
   color: rgb(100, 21, 255);
 }
 
+.app {
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 2rem;
+  color: rgb(36, 62, 99);
+}
+
 /* NAV BAR */
 
 nav {
@@ -238,6 +245,7 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   padding: 2rem 0.5rem;
+  padding-left: 6.25rem;
 }
 
 .three_column--image-description {
@@ -261,7 +269,7 @@ nav {
   /* align-items: flex-start; */
   /* text-align: left; */
   width: calc(100% / 3);
-  padding: 24px;
+  padding: 24px 1px;
   color: rgb(124, 139, 161);
 }
 
@@ -297,16 +305,18 @@ nav {
 
 .textContainer {
   padding-left: 16px;
+  width: 100%;
+  max-width: 300px;
 }
 
 /* Two columns */
 
 .two_column-container {
   position: relative;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%; */
+  /* padding: 0 16px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; */
 }
 
 .two_column--button {
@@ -314,25 +324,32 @@ nav {
   margin-right: auto;
   display: flex;
   max-width: 1280px;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
+.two_column--list {
+  display: flex;
+  /* align-items: center;
+  padding: 56px 0; */
+}
+
 .two_column--button-image {
   margin-left: auto;
   margin-right: 0;
   width: 100%;
-  max-width: 28rem;
+  max-width: 34rem;
   padding-right: 2.5rem;
 }
 
 .two_column--image {
   border-radius: 0.25rem;
   border-width: 1px;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -343,6 +360,274 @@ nav {
   max-width: 28rem;
   display: flex;
   justify-content: flex-start;
-
+  padding-left: 2.5rem;
 }
 
+.two_column--text-content {
+  text-align: left;
+}
+
+.two_column--subheading {
+  font-weight: 700;
+  color: rgb(100, 21, 255);
+}
+
+.two_column--product-page {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: rgb(100, 21, 255);
+}
+
+.two_column--button-heading {
+  margin-top: 16px;
+  font-weight: 900;
+  line-height: 1.25;
+  font-size: 1.875rem;
+}
+
+.two_column--style {
+  color: rgb(100, 21, 255);
+}
+
+.two_column--button-description {
+  margin-top: 16px;
+  font-size: 0.875;
+  font-weight: 500;
+  line-height: 1.625;
+  color: rgb(124, 139, 161);
+}
+
+.two_column--spacer {
+  padding: 16px;
+}
+
+.two_column--primary-button {
+  border-radius: 9999px;
+  background-color: rgb(100, 21, 255);
+  padding: 12px 32px;
+  font-weight: 700;
+  color: rgb(247, 250, 252);
+}
+
+/* Done with the top but needs touch up */
+
+/* two column steps container */
+
+.two_column--steps-container {
+  position: relative;
+}
+
+.two_column--steps-twoColumn {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 100%;
+  max-width: 1280px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.two_column--steps-column {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 28rem;
+}
+
+.two_column--steps-image {
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.two_column--step-textColumn {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 28rem;
+}
+
+.two_column--step-textContent {
+  text-align: left;
+}
+
+.two_column--steps-subheading {
+  font-weight: 700;
+  color: rgb(100, 21, 255);
+  /* margin: 0px; */
+}
+
+.two_column--span-subheading {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: rgb(100, 21, 255);
+}
+
+.landing_page--heading {
+  margin-top: 1rem;
+  font-size: 1.875rem;
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: 0.025rem;
+}
+
+.highlighted_text--steps {
+  color: rgb(100, 21, 255);
+}
+
+.two_column--steps-steps {
+  margin-top: 3rem;
+}
+
+/*  */
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*  */
+
+.two_column--steps-steps1 {
+  margin-top: 32px;
+  display: flex;
+}
+
+.two_column--steps-stepnumber {
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1;
+  color: rgb(203, 213, 224);
+}
+
+.two_column--steps-stepText {
+  margin-left: 24px;
+}
+
+.two_column--stepHeading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.two_column--stepDescription {
+  margin-top: 12px;
+  max-width: 320px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 2;
+  color: rgb(113, 128, 150);
+}
+
+/* Values page */
+
+
+.twoColumn_horizontalFeatures--container {
+  position: relative;
+}
+
+.twoColumn_horizontalFeatures--twoColumn {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  max-width: 1280px;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between; 
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.twoColumn_horizontalFeatures--imageColumn {
+  position: relative;
+  flex-shrink: 0;
+  margin-left: auto;
+  margin-right: 0;
+  width: 100%;
+  max-width: 30rem;
+}
+
+.twoColumn_horizontalFeatures--image {
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.twoColumn_horizontalFeatures--textColumn {
+  margin-left: 0;
+  margin-right: auto;
+  width: 100%;
+  max-width: 28rem;
+}
+
+.twoColumn_horizontalFeatures--textContent {
+  text-align: left;
+}
+
+.twoColumn_horizontalFeatures--subheading {
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(100, 21, 255);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.twoColumn_horizontalFeatures--heading {
+  font-size: 2.5rem;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.twoColumn_featureHeading-highlight {
+  color: rgb(100, 21, 255);
+}
+
+.twoColumn_horizontalFeatures--description {
+  margin-top: 2rem;
+  text-align: left;
+  color: rgb(124, 139, 161);
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+
+
+.twoColumn_horizontalFeatures--features {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  max-width: 20rem;
+}
+
+.twoColumn_horizontalFeatures--feature {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.twoColumn_featureHeading--container {
+  display: flex;
+  /* align-items: center; */
+}
+
+.twoColumn_horizontal--iconContainer1 {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  border-color: rgb(100, 21, 255);
+  padding-right: 16px;
+  text-align: center;
+  border-radius: 9999px;
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 13.5px;
+  background-color: rgb(154, 230, 180);
+  color: rgb(39, 103, 73);
+}

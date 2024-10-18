@@ -5,250 +5,390 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TReact</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
-    <section id="about">
-      <nav class="nav_desktop">
-        <a href="" class="nav_link--logo-link">
-          <img
-            src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
-            alt=""
-            class="nav_link--logo-img"
-          />Treact
-        </a>
-        <ul class="nav_link--list">
-          <li class="nav_link">
-            <a
-              href="#about"
-              class="nav_link--anchor link_hover-effect link_hover-effect--black"
-              >About</a
-            >
-          </li>
-          <li class="nav_link">
-            <a
-              href="#blog"
-              class="nav_link--anchor link_hover-effect link_hover-effect--black"
-              >Blog</a
-            >
-          </li>
-          <li class="nav_link">
-            <a
-              href="#pricing"
-              class="nav_link--anchor link_hover-effect link_hover-effect--black"
-              >Pricing</a
-            >
-          </li>
-          <li class="nav_link">
-            <a
-              href="#contact-us"
-              class="nav_link--anchor link_hover-effect link_hover-effect--black"
-              >Contact us</a
-            >
-          </li>
-          <li class="nav_link">
-            <a
-              href="#login"
-              class="nav_link--anchor link_hover-effect link_hover-effect--black"
-              >Login</a
-            >
-          </li>
-          <li class="nav_link">
-            <a href="#sign-up" class="nav_link--anchor nav_link--anchor-primary"
-              >Sign Up</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div class="TowColumn_container">
-        <div class="container_columns">
-          <div class="left_column">
-            <h1 class="column_heading">
-              Beautiful React Templates
-              <span class="text_color"> for you.</span>
-            </h1>
-            <p class="column_paragraph">
-              Our templates are easy to setup, understand and customize. Fully
-              modular components with a variety of pages and components.
-            </p>
-            <div class="left_column--actions">
-              <input type="email" placeholder="Your E-mail Address" />
-              <button>Get Started</button>
-            </div>
-            <div class="left_column--customers-logo">
-              <p>Our TRUSTED Customers</p>
+    <div id="root">
+      <div class="app">
+        <section id="about">
+          <nav class="nav_desktop">
+            <a href="" class="nav_link--logo-link">
               <img
-                src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
-                alt="Our Customers"
-              />
+                src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+                alt=""
+                class="nav_link--logo-img"
+              />Treact
+            </a>
+            <ul class="nav_link--list">
+              <li class="nav_link">
+                <a
+                  href="#about"
+                  class="nav_link--anchor link_hover-effect link_hover-effect--black"
+                  >About</a
+                >
+              </li>
+              <li class="nav_link">
+                <a
+                  href="#blog"
+                  class="nav_link--anchor link_hover-effect link_hover-effect--black"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav_link">
+                <a
+                  href="#pricing"
+                  class="nav_link--anchor link_hover-effect link_hover-effect--black"
+                  >Pricing</a
+                >
+              </li>
+              <li class="nav_link">
+                <a
+                  href="#contact-us"
+                  class="nav_link--anchor link_hover-effect link_hover-effect--black"
+                  >Contact us</a
+                >
+              </li>
+              <li class="nav_link">
+                <a
+                  href="#login"
+                  class="nav_link--anchor link_hover-effect link_hover-effect--black"
+                  >Login</a
+                >
+              </li>
+              <li class="nav_link">
+                <a
+                  href="#sign-up"
+                  class="nav_link--anchor nav_link--anchor-primary"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="TowColumn_container">
+            <div class="container_columns">
+              <div class="left_column">
+                <h1 class="column_heading">
+                  Beautiful React Templates
+                  <span class="text_color"> for you.</span>
+                </h1>
+                <p class="column_paragraph">
+                  Our templates are easy to setup, understand and customize.
+                  Fully modular components with a variety of pages and
+                  components.
+                </p>
+                <div class="left_column--actions">
+                  <input type="email" placeholder="Your E-mail Address" />
+                  <button>Get Started</button>
+                </div>
+                <div class="left_column--customers-logo">
+                  <p>Our TRUSTED Customers</p>
+                  <img
+                    src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
+                    alt="Our Customers"
+                  />
+                </div>
+              </div>
+              <div class="right_column">
+                <div class="right_column--illustration">
+                  <img
+                    src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+                    alt="Design Illustration"
+                    class="right_column--illustration-StyleImg"
+                  />
+                </div>
+              </div>
             </div>
           </div>
-          <div class="right_column">
-            <div class="right_column--illustration">
-              <img
-                src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
-                alt="Design Illustration"
-                class="right_column--illustration-StyleImg"
-              />
+        </section>
+        <section id="features">
+          <div class="three_columns--container">
+            <div class="three_column--image-container">
+              <div class="features_list">
+                <h3 class="three_column--image-subheading">
+                  <span class="text_color feature_size">Features</span>
+                </h3>
+                <h2 class="three_column--heading">
+                  We have amazing
+                  <span class="service_color"> Service.</span>
+                </h2>
+                <p class="three_column--image-description">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Aliquam ipsam, labore reprehenderit cumque sint expedita atque
+                  minus. Corrupti itaque saepe modi debitis aspernatur, officia
+                  optio facere enim delectus at minima?
+                </p>
+              </div>
+            </div>
+            <div class="three_column--wrapper">
+              <div class="three_column--second">
+                <div class="three_column--card-two">
+                  <span class="imageContainer">
+                    <img
+                      src="./assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
+                      alt=""
+                    />
+                  </span>
+                  <span class="textContainer">
+                    <span class="title">Secure</span>
+                    <p class="description">
+                      We strictly only deal with vendors that provide top notch
+                      security.
+                    </p>
+                  </span>
+                </div>
+              </div>
+              <div class="three_column--second">
+                <div class="three_column--card-two">
+                  <span class="imageContainer">
+                    <img
+                      src="./assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg"
+                      alt=""
+                    />
+                  </span>
+                  <span class="textContainer">
+                    <span class="title">24/7</span>
+                    <p class="description">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Quaerat error est pariatur officiis?
+                    </p>
+                  </span>
+                </div>
+              </div>
+              <div class="three_column--second">
+                <div class="three_column--card-two">
+                  <span class="imageContainer">
+                    <img
+                      src="./assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg"
+                      alt=""
+                    />
+                  </span>
+                  <span class="textContainer">
+                    <span class="title">Customizable</span>
+                    <p class="description">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Quaerat error est pariatur officiis?
+                    </p>
+                  </span>
+                </div>
+              </div>
+              <div class="three_column--second">
+                <div class="three_column--card-two">
+                  <span class="imageContainer">
+                    <img
+                      src="./assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg"
+                      alt=""
+                    />
+                  </span>
+                  <span class="textContainer">
+                    <span class="title">Reliable</span>
+                    <p class="description">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Quaerat error est pariatur officiis?
+                    </p>
+                  </span>
+                </div>
+              </div>
+              <div class="three_column--second">
+                <div class="three_column--card-two">
+                  <span class="imageContainer">
+                    <img
+                      src="./assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg"
+                      alt=""
+                    />
+                  </span>
+                  <span class="textContainer">
+                    <span class="title">Fast</span>
+                    <p class="description">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Quaerat error est pariatur officiis?
+                    </p>
+                  </span>
+                </div>
+              </div>
+              <div class="three_column--second">
+                <div class="three_column--card-two">
+                  <span class="imageContainer">
+                    <img
+                      src="./assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg"
+                      alt=""
+                    />
+                  </span>
+                  <span class="textContainer">
+                    <span class="title">Easy</span>
+                    <p class="description">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Quaerat error est pariatur officiis?
+                    </p>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+        <section id="learn">
+          <div class="two_column--container">
+            <div class="two_column--button">
+              <div class="two_column--button-image">
+                <img
+                  src="./assets/hero-screenshot-1.40a097b525c2f8c9808e.png"
+                  class="two_column--image"
+                  alt=""
+                />
+              </div>
+              <div class="two_column--text-column">
+                <div class="two_column--text-content">
+                  <h2 class="two_column--subheading">
+                    <span class="two_column--product-page">Quality Work</span>
+                  </h2>
+                  <h1 class="two_column--button-heading">
+                    Designed & Developed by
+                    <span class="two_column--style">Professionals.</span>
+                  </h1>
+                  <p class="two_column--button-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Consequuntur recusandae accusantium dolorum a quibusdam
+                    laudantium deserunt vitae repudiandae dicta cum nam animi,
+                    rem, error corrupti distinctio? Officia minus officiis
+                    veniam?
+                  </p>
+                  <div class="two_column--spacer"></div>
+                  <a
+                    href="https://timerse.com"
+                    class="two_column--primary-button"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="steps">
+          <div class="two_column--steps-container">
+            <div class="two_column--steps-twoColumn">
+              <div class="two_column--steps-column">
+                <img
+                  src="./assets/hero-screenshot-2.241aac1fbc66db29d873.png"
+                  class="two_column--steps-image"
+                  alt=""
+                />
+              </div>
+              <div class="two_column--step-textColumn">
+                <div class="two_column--step-textContent">
+                  <h2 class="two_column--steps-subheading">
+                    <span class="two_column--span-subheading">STEPS</span>
+                  </h2>
+                  <h1 class="landing_page--heading">
+                    Easy to
+                    <span class="highlighted_text--steps">Get Started.</span>
+                  </h1>
+                  <ul class="two_column--steps-steps">
+                    <li class="two_column--steps-steps1">
+                      <div class="two_column--steps-stepnumber">01</div>
+                      <div class="two_column--steps-stepText">
+                        <h3 class="two_column--stepHeading">Register</h3>
+                        <p class="two_column--stepDescription">
+                          Create an account with us using google or facebook.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="two_column--steps-steps1">
+                      <div class="two_column--steps-stepnumber">02</div>
+                      <div class="two_column--steps-stepText">
+                        <h3 class="two_column--stepHeading">Download</h3>
+                        <p class="two_column--stepDescription">
+                          Browse and Download the template that you like from
+                          the marketplace.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="two_column--steps-steps1">
+                      <div class="two_column--steps-stepnumber">03</div>
+                      <div class="two_column--steps-stepText">
+                        <h3 class="two_column--stepHeading">Run</h3>
+                        <p class="two_column--stepDescription">
+                          Follow the instructions to setup and customize the
+                          templates to your needs.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="values">
+          <div class="twoColumn_horizontalFeatures--container">
+            <div class="twoColumn_horizontalFeatures--twoColumn">
+              <div class="twoColumn_horizontalFeatures--imageColumn">
+                <img
+                  src="./assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg"
+                  class="twoColumn_horizontalFeatures--image"
+                  alt=""
+                />
+              </div>
+              <div class="twoColumn_horizontalFeatures--textColumn">
+                <div class="twoColumn_horizontalFeatures--textContent">
+                  <h2 class="twoColumn_horizontalFeatures--subheading">
+                    Values
+                  </h2>
+                  <h1 class="twoColumn_horizontalFeatures--heading">
+                    We Always Abide by Our
+                    <span class="twoColumn_featureHeading-highlight">
+                      Principles.
+                    </span>
+                  </h1>
+                  <p class="twoColumn_horizontalFeatures--description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Temporibus sequi dolorem error veritatis ex dignissimos
+                    dolor, aut, quisquam porro facilis alias labore mollitia ea
+                    laudantium excepturi vel id ratione qui.
+                  </p>
+
+                  <div class="twoColumn_horizontalFeatures--features">
+                    <div class="twoColumn_horizontalFeatures--feature">
+                      <div class="twoColumn_featureHeading--container">
+                        <div class="twoColumn_horizontal--iconContainer1">
+                          <i class="fa-solid fa-dollar-sign"></i>
+                        </div>
+                        <div class="twoColumn_featureHeading">Affordable</div>
+                        <div class="twoColumn_featureDescription">
+                          We promise to offer you the best rate we can - at par
+                          with the industry standard.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="twoColumn_horizontalFeatures--feature">
+                      <div class="twoColumn_featureHeading--container">
+                        <div
+                          class="twoColumn_horizontalFeatures--iconContainer2"
+                        >
+                          <i class="fa-solid fa-suitcase"></i>
+                        </div>
+                        <div class="twoColumn_featureHeading">
+                          Professionalism
+                        </div>
+                        <div class="twoColumn_featureDescription">
+                          We assure you that our templates are designed and
+                          created by professional designers.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    href="https://timerse.com"
+                    class="twoColumn_horizontalFeatures--primaryButton"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
-    <section id="features">
-      <div class="three_columns--container">
-        <div class="three_column--image-container">
-          <div class="features_list">
-            <h3 class="three_column--image-subheading">
-              <span class="text_color feature_size">Features</span>
-            </h3>
-            <h2 class="three_column--heading">
-              We have amazing
-              <span class="service_color"> Service.</span>
-            </h2>
-            <p class="three_column--image-description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
-              ipsam, labore reprehenderit cumque sint expedita atque minus.
-              Corrupti itaque saepe modi debitis aspernatur, officia optio
-              facere enim delectus at minima?
-            </p>
-          </div>
-        </div>
-        <div class="three_column--wrapper">
-          <div class="three_column--second">
-            <div class="three_column--card-two">
-              <span class="imageContainer">
-                <img
-                  src="./assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
-                  alt=""
-                />
-              </span>
-              <span class="textContainer">
-                <span class="title">Secure</span>
-                <p class="description">
-                  We strictly only deal with vendors that provide top notch
-                  security.
-                </p>
-              </span>
-            </div>
-          </div>
-          <div class="three_column--second">
-            <div class="three_column--card-two">
-              <span class="imageContainer">
-                <img
-                  src="./assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg"
-                  alt=""
-                />
-              </span>
-              <span class="textContainer">
-                <span class="title">24/7</span>
-                <p class="description">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Quaerat error est pariatur officiis?
-                </p>
-              </span>
-            </div>
-          </div>
-          <div class="three_column--second">
-            <div class="three_column--card-two">
-              <span class="imageContainer">
-                <img
-                  src="./assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg"
-                  alt=""
-                />
-              </span>
-              <span class="textContainer">
-                <span class="title">Customizable</span>
-                <p class="description">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Quaerat error est pariatur officiis?
-                </p>
-              </span>
-            </div>
-          </div>
-          <div class="three_column--second">
-            <div class="three_column--card-two">
-              <span class="imageContainer">
-                <img
-                  src="./assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg"
-                  alt=""
-                />
-              </span>
-              <span class="textContainer">
-                <span class="title">Reliable</span>
-                <p class="description">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Quaerat error est pariatur officiis?
-                </p>
-              </span>
-            </div>
-          </div>
-          <div class="three_column--second">
-            <div class="three_column--card-two">
-              <span class="imageContainer">
-                <img
-                  src="./assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg"
-                  alt=""
-                />
-              </span>
-              <span class="textContainer">
-                <span class="title">Fast</span>
-                <p class="description">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Quaerat error est pariatur officiis?
-                </p>
-              </span>
-            </div>
-          </div>
-          <div class="three_column--second">
-            <div class="three_column--card-two">
-              <span class="imageContainer">
-                <img
-                  src="./assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg"
-                  alt=""
-                />
-              </span>
-              <span class="textContainer">
-                <span class="title">Easy</span>
-                <p class="description">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Quaerat error est pariatur officiis?
-                </p>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="learn">
-      <div class="two_column--container">
-        <div class="two_column--button">
-          <div class="two_column--button-image">
-            <img
-              src="./assets/hero-screenshot-1.40a097b525c2f8c9808e.png"
-              class="two_column--image"
-              alt=""
-            />
-          </div>
-          <div class="two_column--text-column">
-            <div class="two_column--text-content">
-              <h2 class="two_column--subheading">
-                <span class="two_column--product-page">Quality Work</span>
-              </h2>
-              <h1 class="two_column--button-heading">
-                Designed & Developed by
-                <span class="two_column--style">Professionals.</span>
-              </h1>
-              <p class="two_column--button-description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequuntur recusandae accusantium dolorum a quibusdam
-                laudantium deserunt vitae repudiandae dicta cum nam animi, rem,
-                error corrupti distinctio? Officia minus officiis veniam?
-              </p>
-              <a href="https://timerse.com" class="two_column--primary-button">Learn More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
   </body>
 </html>
