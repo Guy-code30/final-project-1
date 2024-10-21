@@ -746,6 +746,7 @@ ul {
 .threePlans_plan2 {
   position: relative;
   margin-top: 4rem;
+  margin-right: 2rem;
   display: flex;
   width: 100%;
   max-width: 24rem;
@@ -755,12 +756,9 @@ ul {
   padding-right: 2rem;
   padding-top: 8px;
   text-align: center;
-  background-image: linear-gradient( 135deg, rgb(76, 81, 191) 0%, 
-  rgb (102, 126, 234) 100%);
+  background-color: rgb(100, 21, 255);
   box-shadow: 0 1px 3px 0 rgb(100, 21, 255);
 }
-
-
 
 .threePlans_planHighlight {
   position: absolute;
@@ -786,7 +784,21 @@ ul {
   font-weight: 700;
 }
 
+.name2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+}
+
 .price {
+  font-size: 3rem;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.price2 {
+  color: white;
   font-size: 3rem;
   margin-top: 4px;
   margin-bottom: 4px;
@@ -797,6 +809,13 @@ ul {
   font-weight: 700;
   letter-spacing: 2px;
   color: rgb(160, 174, 192);
+}
+
+.duration2 {
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: rgb(160, 174, 192);
+  color: white;
 }
 
 .threePlans_planFeatures {
@@ -815,12 +834,25 @@ ul {
   letter-spacing: 1px;
 }
 
+.feaure_mainFeature--middle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+}
+
 .feature {
   margin-top: 1.25rem;
   font-weight: 500;
   color: rgb(113, 128, 150);
 }
-
+/*  */
+.feature2 {
+  margin-top: 1.25rem;
+  font-weight: 500;
+  color: white
+}
+/*  */
 .threePlans_planAction {
   padding: 2rem 1rem;
 }
