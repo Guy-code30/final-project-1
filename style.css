@@ -975,8 +975,6 @@ ul {
   color: rgb(124, 139, 161);
 }
 
-/* Animated box */
-
 .twoCol_testimonialSlider {
   text-align: left;
   margin-top: 2.5rem;
@@ -984,34 +982,6 @@ ul {
   display: block;
   position: relative;
   box-sizing: border-box;
-
-}
-
-.twoCol_slickList {
-  transform: translateZ(0);
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  display: block;
-  position: relative;
-}
-
-.twoCol_slickTrack {
-  width: 2880px;
-  opacity: 1;
-  transform: translate3d(-1152px, 0px, 0px);
-  display: flex;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  top: 0;
-}
-
-.twoCol_slickTrack::before,
-.twoCol_slickTrack::after {
-  content: "";
-  display: table;
 }
 
 .twoCol_slickSlide--slickCloned {
@@ -1025,7 +995,6 @@ ul {
 .twoCol_testimonial {
   width: 100%;
   display: flex;
-  /* display: inline-block; */
   height: 100%;
   flex-direction: column;
   outline: transparent solid 2px;
@@ -1033,125 +1002,111 @@ ul {
 }
 
 .twoCol_starContainer {
-  margin-right: 4px;
-  display: inline-block;
-  height: 1.25rem;
-  width: 1.25rem;
-  fill: currentColor;
-  color: rgb(246, 173, 85);
-  vertical-align: middle;
-}
-
-/* .twoCol_starContainer i {
-  font-size: 24px;
   color: gold;
-  margin-right: 5px;
-} */
+  font-size: 1.25rem;
+}
 
 .twoCol_testimonialHeading {
-
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
-
-
-
-
-
-
-/* FROM SLICK-SLIDE HTML AND DOWN */
-
-.testimonial {
-  padding: 20px;
+.twoCol_quote {
+  margin-top: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgb(124, 139, 161);
 }
 
-.stars-container {
-  margin-bottom: 10px;
-}
-
-.star {
-  color: gold;
-  font-size: 24px;
-}
-
-.testimonial-heading {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.quote {
-  font-style: italic;
-  margin-bottom: 15px;
-}
-
-.customer-info-controls {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.customer-info {
+.twoCol_customersInfo {
   display: flex;
   align-items: center;
+  margin-top: 1rem;
 }
 
-.customer-profile-picture {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
+.twoCol_customerspfp {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 9999px;
+  max-width: 100%;
 }
 
-.customer-name {
-  margin: 0;
-  font-weight: bold;
+.twoCol_subdivision {
+  margin-left: 1rem;
 }
 
-.customer-title {
-  margin: 0;
-  color: gray;
-}
+/* FAQ section */
 
-.controls {
-  display: flex;
-  align-items: center;
-}
-
-.control-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
+.FAQs {
   position: relative;
 }
 
-.control-button.left-arrow::before {
-  content: "";
-  border: solid currentColor;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 6px;
-  transform: rotate(135deg);
-  position: absolute;
-  left: 0;
-  top: 4px;
+.FAQs_page {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
-.control-button.right-arrow::before {
-  content: "";
-  border: solid currentColor;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 6px;
-  transform: rotate(-45deg);
-  position: absolute;
-  right: 0;
-  top: 4px;
+.FAQs_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.divider {
-  width: 1px;
-  height: 24px;
-  background-color: gray;
-  margin: 0 10px;
+.SingleCol_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.SingleCol_HeaderContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SingleCol_subheading {
+  color: rgb(100, 21, 255);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.SingleCol_Heading {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.SingleCol_HighlightedText {
+  color: rgb(100, 21, 255);
+}
+
+.SingleCol_Description {
+  text-align: center;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 30rem;
+  font-size: 1.125rem;
+  line-height: 1.625;
+  color: rgb(124, 139, 161);
+  font-weight: 500;
+}
+
+.SingleCol_Container {
+  position: relative;
+  margin-top: 3rem;
+  max-width: 56rem;
+}
+
+.SingleCol_group {
+  margin-top: 1.25rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background-color: rgb(237, 242, 247);
+  color: rgb(45, 55, 72);
+}
+
