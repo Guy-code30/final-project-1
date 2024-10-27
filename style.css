@@ -1096,17 +1096,19 @@ ul {
   font-weight: 500;
 }
 
-.SingleCol_Container {
+.SingleCol_wrapper {
   position: relative;
   margin-top: 3rem;
-  max-width: 56rem;
+  width: 100%;
 }
 
-.SingleCol_group {
+.SingleCol_quest {
   margin-top: 1.25rem;
-  cursor: pointer;
   border-radius: 0.5rem;
   background-color: rgb(237, 242, 247);
   color: rgb(45, 55, 72);
+  box-sizing: border-box;
+  padding: 1.25rem 2rem;
+  width: 50rem;
+  font-weight: 700;
 }
-
