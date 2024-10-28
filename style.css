@@ -117,7 +117,23 @@ nav {
   border-radius: 1px;
 }
 
+.Nav_Toggle {
+  display: none;
+}
 
+@media (max-width: 1024px) {
+  .Nav_Toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav_link--list {
+      display: none; 
+  }
+}
 
 
 
@@ -227,7 +243,6 @@ nav {
 
 /* media */
 
-
 @media (max-width: 1024px) {
   .nav_desktop {
     max-width: 100%;
@@ -240,7 +255,8 @@ nav {
     padding: 64px 0;
   }
 
-  .left_column, .right_column {
+  .left_column,
+  .right_column {
     max-width: 100%;
     padding: 16px;
   }
@@ -266,24 +282,6 @@ nav {
     margin: 0 auto;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Features */
 
@@ -1397,5 +1395,3 @@ ul {
   padding: 8px;
   color: rgb(26, 32, 44);
 }
-
-
