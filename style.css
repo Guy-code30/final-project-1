@@ -97,6 +97,31 @@ nav {
   font-weight: 700;
 }
 
+/* Hamburger icon for media */
+
+.hamburger-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(100, 21, 255);
+  border-radius: 1px;
+}
+
+
+
+
+
+
 /*  COLUMNS */
 
 .TwoColumn_container {
@@ -200,6 +225,66 @@ nav {
   padding-left: 10px;
 }
 
+/* media */
+
+
+@media (max-width: 1024px) {
+  .nav_desktop {
+    max-width: 100%;
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .container_columns {
+    flex-direction: column;
+    padding: 64px 0;
+  }
+
+  .left_column, .right_column {
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .column_heading {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .left_column--actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left_column--actions input {
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+
+  .right_column--illustration img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Features */
 
 .three_columns--container {
@@ -250,7 +335,7 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  /* max-width: 32rem; */
+  max-width: 1280px;
 }
 
 .three_column--image-description {
@@ -316,6 +401,7 @@ nav {
   padding-left: 16px;
   width: 100%;
   max-width: 300px;
+  text-align: start;
 }
 
 /* Two columns */
@@ -1311,3 +1397,5 @@ ul {
   padding: 8px;
   color: rgb(26, 32, 44);
 }
+
+
