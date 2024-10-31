@@ -182,8 +182,7 @@ nav {
 
 /* Small phone */
 
-@media (max-width:640px) {
-
+@media (max-width: 640px) {
   .left_column--actions input {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
@@ -205,7 +204,6 @@ nav {
     width: 10rem;
     line-height: 1;
   }
-
 }
 
 /*  COLUMNS */
@@ -275,6 +273,27 @@ nav {
   border-radius: 9999px;
   font-weight: 700;
   color: rgb(247, 250, 252);
+}
+
+.second_btn {
+  background-color: rgb(100, 21, 255);
+  width: 100%;
+  border-radius: 9999px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  margin-top: 5px;
+  display: none;
+}
+
+@media (max-width:580px) {
+  .first_btn {
+    visibility: hidden;
+  }
+
+  .second_btn {
+    display: block;
+  }
 }
 
 .left_column--customers-logo {
