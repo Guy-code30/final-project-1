@@ -164,6 +164,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 0;
   }
 
   .left_column--actions input {
@@ -178,6 +179,7 @@ nav {
   .column_paragraph {
     text-align: center;
   }
+
 }
 
 /* Small phone */
@@ -217,7 +219,8 @@ nav {
   margin-right: auto;
   display: flex;
   max-width: 1280px;
-  padding-bottom: 96px;
+  padding-top: 2.5rem;
+  padding-bottom: 5rem;
 }
 
 .left_column {
@@ -231,13 +234,14 @@ nav {
 .column_heading {
   font-size: 1.875rem;
   font-weight: 700;
-  line-height: 3;
+  margin-bottom: 2rem;
 }
 
 .column_paragraph {
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+
 }
 
 .left_column--actions {
@@ -294,10 +298,26 @@ nav {
   .second_btn {
     display: block;
   }
+
+  .container_columns {
+    padding-top: 2.5rem;
+  }
+
+  .left_column-logo {
+    margin-top: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .left_column--customers-logo {
   margin-top: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
 }
 
 .left_column--customers-logo p {
@@ -315,7 +335,7 @@ nav {
   margin-top: 16px;
   width: 100%;
   opacity: 0.5;
-  padding-right: 64px;
+  /* padding-right: 64px; */
 }
 
 .right_column {
@@ -453,10 +473,6 @@ nav {
 
 .two_column-container {
   position: relative;
-  /* padding: 0 16px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto; */
 }
 
 .two_column--button {
@@ -464,7 +480,6 @@ nav {
   margin-right: auto;
   display: flex;
   max-width: 1280px;
-  /* flex-direction: column; */
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
@@ -474,8 +489,6 @@ nav {
 
 .two_column--list {
   display: flex;
-  /* align-items: center;
-  padding: 56px 0; */
 }
 
 .two_column--button-image {
