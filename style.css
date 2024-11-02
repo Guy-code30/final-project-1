@@ -227,7 +227,7 @@ nav {
   position: relative;
   margin-left: 0;
   margin-right: 0;
-  max-width: 32rem;
+  max-width: 28rem;
   margin-top: 2rem;
 }
 
@@ -303,7 +303,7 @@ nav {
     padding-top: 2.5rem;
   }
 
-  .left_column-logo {
+  .left_column--customers-logo {
     margin-top: 68px;
     display: flex;
     justify-content: center;
@@ -335,7 +335,6 @@ nav {
   margin-top: 16px;
   width: 100%;
   opacity: 0.5;
-  /* padding-right: 64px; */
 }
 
 .right_column {
@@ -363,6 +362,23 @@ nav {
   max-width: 1024px;
   margin-bottom: 40px;
 }
+
+@media (min-width: 768px) {
+  .three_column--wrapper {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .three_column--wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
 
 .three_column--image-subheading {
   margin-bottom: 16px;
