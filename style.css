@@ -356,10 +356,8 @@ nav {
 .three_column--image-container {
   margin-left: auto;
   margin-right: auto;
-  justify-content: center;
   max-width: 1024px;
   padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 @media (max-width: 1024px) {
@@ -502,6 +500,27 @@ nav {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
+
+   .two_column--subheading {
+    text-align: center;
+  }
+
+  .two_column--button-heading {
+    text-align: center;
+  }
+
+  .two_column--button-description {
+    text-align: center;
+  }
+
+  .two_column--primary-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 10rem;
+  }
 }
 
 
@@ -511,10 +530,9 @@ nav {
 
 .two_column--button-image {
   margin-left: auto;
-  margin-right: 0;
+  margin-right: auto;
   width: 100%;
   max-width: 34rem;
-  padding-right: 2.5rem;
 }
 
 .two_column--image {
@@ -525,13 +543,13 @@ nav {
 }
 
 .two_column--text-column {
-  margin-left: 0;
+  margin-left: auto;
   margin-right: auto;
   width: 100%;
   max-width: 28rem;
   display: flex;
   justify-content: flex-start;
-  padding-left: 2.5rem;
+  padding-top: 2rem;
 }
 
 .two_column--text-content {
@@ -574,6 +592,8 @@ nav {
 }
 
 .two_column--primary-button {
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 9999px;
   background-color: rgb(100, 21, 255);
   padding: 12px 32px;
@@ -581,9 +601,7 @@ nav {
   color: rgb(247, 250, 252);
 }
 
-/* Done with the top but needs touch up */
-
-/* two column steps container */
+/* Steps */
 
 .two_column--steps-container {
   position: relative;
@@ -601,6 +619,26 @@ nav {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+
+@media (max-width: 768px) {
+  .two_column--steps-twoColumn {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .two_column--step-textContent {
+    padding-top: 5rem;
+  }
+
+  .two_column--steps-subheading {
+    text-align: center;
+  }
+
+  .landing_page--heading {
+    text-align: center;
+  }
+}
+
 
 .two_column--steps-column {
   margin-left: auto;
@@ -629,7 +667,6 @@ nav {
 .two_column--steps-subheading {
   font-weight: 700;
   color: rgb(100, 21, 255);
-  /* margin: 0px; */
 }
 
 .two_column--span-subheading {
@@ -714,7 +751,56 @@ ul {
   padding-bottom: 5rem;
 }
 
-.twoColumn_horizontalFeatures--imageColumn {
+@media (max-width: 1024px) {
+  .twoColumn_horizontalFeatures--features {
+    /* Removed margin right because it didnt size up well with 768px */
+    /* margin-right: 4rem; */
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .twoColumn_horizontalFeatures--twoColumn {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .twoColumn_horizontalFeatures--textContent {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .twoColumn_horizontalFeatures--heading {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .twoColumn_featureHeading-highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .twoColumn_horizontalFeatures--description {
+    text-align: center;
+  }
+
+  .twoColumn_horizontalFeatures--features {
+    text-align: center;
+  }
+
+  .twoColumn_featureHeading--container {
+    display: flex;
+  }
+}
+
+.twoColumn_horizontalFeatures--imagColumn {
   position: relative;
   flex-shrink: 0;
   margin-left: auto;
@@ -730,7 +816,8 @@ ul {
 }
 
 .twoColumn_horizontalFeatures--textColumn {
-  margin-left: 0;
+  /* Margin left was orignially 0 but changed to auto for sizing reasons */
+  margin-left: auto; 
   margin-right: auto;
   width: 100%;
   max-width: 28rem;
@@ -760,7 +847,8 @@ ul {
 
 .twoColumn_horizontalFeatures--description {
   margin-top: 2rem;
-  text-align: left;
+  /* Removed (tal) because it wouldnt size right in 768px*/
+  /* text-align: left; */
   color: rgb(124, 139, 161);
   line-height: 1.5;
   font-size: 20px;
@@ -773,6 +861,7 @@ ul {
 
 .twoColumn_horizontalFeatures--feature {
   margin-top: 2.5rem;
+  margin-right: 1rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
