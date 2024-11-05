@@ -1636,7 +1636,9 @@ ul {
 }
 
 .fiveCol_copyright {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 0.875rem;
   font-weight: 500;
   color: rgb(203, 213, 224);
@@ -1644,13 +1646,44 @@ ul {
 
 .fiveCol_socialLinks-containers {
   display: flex;
+  align-items: center;
 }
 
 .fiveCol_socialLink {
   margin-right: 1rem;
+  margin-left: 1rem;
   cursor: pointer;
   border-radius: 9999px;
   background-color: rgb(247, 250, 252);
   padding: 8px;
   color: rgb(26, 32, 44);
+}
+
+
+@media (max-width: 1024px) {
+
+}
+
+
+@media (max-width: 768px) {
+
+  .fiveCol_fiveColumns {
+    
+  }
+
+  .fiveCol_threeColRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fiveCol_logoContainer {
+    padding-bottom: 2rem;
+  }
+
+  .fiveCol_copyright {
+    padding-bottom: 2rem;
+  }
+
+
 }
