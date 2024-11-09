@@ -399,7 +399,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 2rem 0.5rem;
+  padding: 5rem 0.5rem;
   width: 100%;
 }
 
@@ -485,6 +485,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  width: 100%;
   max-width: 1280px;
   flex-direction: row-reverse;
   align-items: center;
@@ -528,10 +529,10 @@ nav {
 }
 
 .two_column--button-image {
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   width: 100%;
-  max-width: 34rem;
+  max-width: 40rem;
 }
 
 .two_column--image {
@@ -542,8 +543,8 @@ nav {
 }
 
 .two_column--text-column {
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   width: 100%;
   max-width: 28rem;
   display: flex;
@@ -557,6 +558,7 @@ nav {
 
 .two_column--subheading {
   font-weight: 700;
+  font-size: 16px;
   color: rgb(100, 21, 255);
 }
 
@@ -571,7 +573,7 @@ nav {
   margin-top: 16px;
   font-weight: 900;
   line-height: 1.25;
-  font-size: 1.875rem;
+  font-size: 3rem;
 }
 
 .two_column--style {
@@ -580,10 +582,13 @@ nav {
 
 .two_column--button-description {
   margin-top: 16px;
-  font-size: 0.875;
+  /* font-size: 0.875; */
   font-weight: 500;
-  line-height: 1.625;
+  line-height: 2;
+  /* line-height: 1.625; */
   color: rgb(124, 139, 161);
+  width: 100%;
+  
 }
 
 .two_column--spacer {
@@ -636,13 +641,25 @@ nav {
   .landing_page--heading {
     text-align: center;
   }
+
+  .two_column--steps-wrapper {
+    margin-right: 4rem;
+  }
+
+  .two_column--stepHeading {
+    text-align: center;
+  }
+
+  .two_column--stepDescription {
+    text-align: center;
+  }
 }
 
 .two_column--steps-column {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0px;
+  margin-right: 0px;
   width: 100%;
-  max-width: 28rem;
+  max-width: 31rem;
 }
 
 .two_column--steps-image {
@@ -651,9 +668,13 @@ nav {
   height: auto;
 }
 
+.two_column--steps-wrapper {
+  margin-left: 4rem;
+}
+
 .two_column--step-textColumn {
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   width: 100%;
   max-width: 28rem;
 }
@@ -676,7 +697,7 @@ nav {
 
 .landing_page--heading {
   margin-top: 1rem;
-  font-size: 1.875rem;
+  font-size: 3rem;
   font-weight: 900;
   line-height: 1.25;
   letter-spacing: 0.025rem;
@@ -690,7 +711,6 @@ nav {
   margin-top: 3rem;
 }
 
-/*  */
 
 ul {
   list-style: none;
@@ -698,11 +718,27 @@ ul {
   padding: 0px;
 }
 
-/*  */
 
 .two_column--steps-steps1 {
   margin-top: 32px;
   display: flex;
+}
+
+@media (max-width: 768px) {
+
+  .two_column--steps-steps1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .two_column--steps-stepnumber {
+    margin-bottom: 1rem;
+  }
+
+  .two_column--steps-stepText {
+    margin-right: 1.5rem;
+  }
 }
 
 .two_column--steps-stepnumber {
